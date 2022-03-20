@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+	                    
+<!-- 	<bean id="d1" class="kr.hs.study.beans.DataBean" scope="prototype" lazy-init="true"/>
+	<bean id="t1" class="kr.hs.study.beans.TestBean">
+		<property name="data1" ref="d1"/>
+		<property name="data2" ref="d1"/>
+	</bean>  
+	
+	<bean id="data1" class="kr.hs.study.beans.DataBean" lazy-init="true"/> 
+	<bean id="data2" class="kr.hs.study.beans.DataBean" lazy-init="true"/> 
+	<bean id="t2" class="kr.hs.study.beans.TestBean" autowire="byName"/> -->
+    <!-- t2라는 이름의 객체를 이름을 통해 자동 주입을 해서 생성해라~ -->
+    <!-- byName을 사용할 때는 꼭 멤버변수의 이름을 가진 bean을 만들어줘야 함 -->
+    
+    <bean id="t3" class="kr.hs.study.beans.TestBean" autowire="byType"/>
+    <bean class="kr.hs.study.beans.DataBean"/>
+    
+    <!-- byType처럼 객체를 다 생성해주지 않아도 객체를 재사용하여 에러가 나지 않음 -->
+    <bean id="data3" class="kr.hs.study.beans.DataBean3"/>
+    <bean id="data4" class="kr.hs.study.beans.DataBean3"/>
+    <bean id="t4" class="kr.hs.study.beans.TestBean3" autowire="constructor"/>
+</beans>

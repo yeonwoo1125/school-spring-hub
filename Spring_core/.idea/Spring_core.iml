@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Config" removed="false">
+          <file>file://$MODULE_DIR$/HelloWolrd/src/main/java/kr/hs/study/config/config.xml</file>
+          <file>file://$MODULE_DIR$/SpringLifeCycle/src/main/java/kr/hs/study/config/config.xml</file>
+          <file>file://$MODULE_DIR$/SpringLifeCycle/target/classes/kr/hs/study/config/config.xml</file>
+          <file>file://$MODULE_DIR$/SpringBasic/src/main/java/kr/hs/study/config/config.xml</file>
+          <file>file://$MODULE_DIR$/SpringLifeCycle2/target/classes/kr/hs/study/config/config.xml</file>
+          <file>file://$MODULE_DIR$/HelloWolrd/target/classes/kr/hs/study/config/config.xml</file>
+          <file>file://$MODULE_DIR$/SpringBasic/target/classes/kr/hs/study/config/config.xml</file>
+          <file>file://$MODULE_DIR$/SpringLifeCycle2/src/main/java/kr/hs/study/config/config.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
