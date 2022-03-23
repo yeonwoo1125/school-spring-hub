@@ -12,6 +12,8 @@ public class MainClass {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("kr/hs/study/config/config.xml");
 		TestBean obj1 = ctx.getBean("t1",TestBean.class);
 		System.out.println("obj1 : "+obj1);
+		
+		ctx.close();
 	}
 
 }
